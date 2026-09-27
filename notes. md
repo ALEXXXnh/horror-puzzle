@@ -1,0 +1,39 @@
+.piece{
+position: relative;
+width: 300px;
+height: 300px;
+}
+
+
+
+
+
+
+<div class="puzzle">
+                    <div class="container">
+
+                    </div>
+
+                    <div class="template">
+                        <div class="slot" id="uno-"></div>
+                        <div class="slot" id="uno-"></div>
+                        <div class="slot" id="uno-"></div>
+                        <div class="slot" id="uno-"></div>
+                        <div class="slot" id="uno-"></div>
+                        <div class="slot" id="uno-"></div>
+                        <div class="slot" id="uno-"></div>
+                        <div class="slot" id="uno-"></div>
+                        <div class="slot" id="uno-"></div>
+                        <div class="slot" id="uno-"></div>
+                    </div>
+
+                    <div class="bgimg">
+
+                    </div>
+
+                    <p class="reload">restart</p>
+                </div>
+
+
+
+

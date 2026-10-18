@@ -36,7 +36,7 @@ play here: [Puzzl.exe](https://alexxxnh.github.io/horror-puzzle/)
 * Nav bar 
 * Reaload button
 * Links to my Github and Deviant
-* Organized httml
+* Organized html
 
 # AI declaration
 No AI was used for this project in any way of code

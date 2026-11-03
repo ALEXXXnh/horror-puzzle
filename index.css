@@ -3,7 +3,8 @@ body{
     width: 1300px;
     height: 1000px;
     overflow: hidden;
-    
+    cursor: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .cursor{
     position: fixed;
@@ -91,7 +92,7 @@ left: 60%;
 }
 .navbar{
     position: absolute;
-width: 40%;
+    width: 40%;
     height: 100%;
     top: 30%;
     left: 4%;
@@ -121,12 +122,21 @@ width: 40%;
     background-color: #ea2a8031;
     transform: scale(1.3, 1.3);
 }
+.puz4{
+    width: 40%;
+    padding: 5%;
+}
+.puz4:hover{
+    background-color: #ea2a8031;
+    transform: scale(1.3, 1.3);
+}
 .re{
     position: absolute;
-    width: 30%;
-    top: 43%;
-    left: -2%;
-    padding: 5%;
+    width: 10%;
+    bottom: 0%;
+    right: 2%;
+    z-index: 12;
+    padding: 1%;
     color: #f4d4e2;
     font-size: 100%;
     font-family: 'Courier New', Courier, monospace;
@@ -171,7 +181,7 @@ h4{
     text-align: center; 
 }
 .selection{
-        position: absolute;
+    position: absolute;
     width: 100%;
     height: auto;
     top: 50%;
@@ -183,23 +193,7 @@ h4{
 
 
 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*PUZZLE 1*/
+ /*PUZZLE 1*/
 .puzzle1{
 display: none;
 z-index: 300;
@@ -798,6 +792,199 @@ left: 49.98%;
 }
 
 .container3 .piece-tri{
+    width: 17%;
+    height: 17%;
+    padding: 3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*PUZZLE 4*/
+.puzzle4{
+display: none;
+z-index: 300;
+}
+
+/*PIECES CONTAINER*/
+.container4{
+position: absolute;
+width: 250px;
+height: 500px;
+border: #de0969;
+background-color: #b8a6bc;
+left: 25%;
+top: 35%;
+overflow: scroll;
+flex: wrap;
+z-index: 301;
+    align-items: left;
+}
+
+/*PIECES*/
+#fur-1{
+width: 100%;
+top: auto;
+left: 0%;
+cursor: grab;
+display: flex;
+box-sizing: border-box;
+flex: wrap;
+}
+    #fur-1:active{
+        cursor: grabbing;
+    }
+#fur-2{
+width: 100%;
+top: auto;
+left: 0%;
+cursor: grab;
+display: flex;
+box-sizing: border-box;
+flex: wrap;
+}
+    #fur-2:active{
+        cursor: grabbing;
+    }
+#fur-3{
+width: 100%;
+top: auto;
+left: 0%;
+cursor: grab;
+display: flex;
+box-sizing: border-box;
+flex: wrap;
+}
+    #fur-3:active{
+        cursor: grabbing;
+    }
+#fur-4{
+width: 100%;
+top: auto;
+left: 0%;
+cursor: grab;
+display: flex;
+box-sizing: border-box;
+flex: wrap;
+}
+    #fur-4:active{
+        cursor: grabbing;
+    }
+#fur-5{
+width: 100%;
+top: auto;
+left: 0%;
+cursor: grab;
+display: flex;
+box-sizing: border-box;
+flex: wrap;
+}
+    #fur-5:active{
+        cursor: grabbing;
+    }
+#fur-6{
+width: 100%;
+top: auto;
+left: 0%;
+cursor: grab;
+display: flex;
+box-sizing: border-box;
+flex: wrap;
+}
+    #fur-6:active{
+        cursor: grabbing;
+    }
+
+
+
+
+/*reference*/
+.bgimg4{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: 35%;
+    left: 40%;
+    filter: opacity(30%);
+    z-index: 300;
+    pointer-events: none;
+}
+
+
+/*Slots base*/
+.template4{
+position: absolute;
+background: color #000;;
+    width: 600px;
+    height: 600px;
+    top: 35%;
+    left: 40%;
+    flex: wrap;
+    z-index: 300;
+}
+
+
+/*SLOTS*/
+.slot-fur{
+position: absolute;
+width: 300px;
+height: 200px;
+display: flex;
+}
+#four-1{
+position: absolute;
+top: 0%;
+left: 0%;
+
+}
+#four-2{
+position: absolute;
+top: 0%;
+left: 49.98%;
+
+}
+#four-3{
+position: absolute;
+top: 33%;
+left: 0%;
+
+}
+#four-4{
+position: absolute;
+top: 33%;
+left: 50%;
+
+}
+#four-5{
+position: absolute;
+top: 66%;
+left: 0%;
+
+}
+#four-6{
+position: absolute;
+top: 66%;
+left: 49.98%;
+
+}
+
+
+.slot-fur .piece-fur{
+    width: 100%;
+    height: auto;
+    z-index: 330;
+}
+
+.container4 .piece-fur{
     width: 17%;
     height: 17%;
     padding: 3%;

@@ -95,6 +95,38 @@ slots3.forEach((slot3) =>{
 
 
 
+const board4 = document.querySelector('.container4')
+const piece4 = document.querySelectorAll('.piece-fur')
+piece4.forEach((piece4) =>{
+    piece4.addEventListener('dragstart', (e) => {
+        e.dataTransfer.setData('text/plain', e.target.id);
+    });
+});
+
+const slots4 = document.querySelectorAll('.slot-fur')
+slots4.forEach((slot4) =>{
+    slot4.addEventListener('dragover', (e) =>{
+        e.preventDefault();
+    });
+
+    slot4.addEventListener('drop', (e)=>{
+        e.preventDefault();
+
+        const draggedpieceId4 = e.dataTransfer.getData('text/plain');
+        const draggedpiece4 = document.getElementById(draggedpieceId4);
+        if(slot4.children.length === 0 && draggedpiece4){
+            slot4.appendChild(draggedpiece4);
+    };
+    });
+});
+
+
+
+
+
+
+
+
 
 
 const puzzle1 = document.querySelector('.puzle1')
@@ -103,7 +135,8 @@ const button1 = document.querySelector('.puz1')
         document.querySelector('.puzzle1').style.display = "flex";
         document.querySelector('.puzzle2').style.display = "none";
         document.querySelector('.puzzle3').style.display = "none";
-        document.querySelector('.noselect').style.display = "none";
+        document.querySelector('.puzzle4').style.display = "none";
+        document.querySelector('.selection').style.display = "none";
     });
 const puzzle2 = document.querySelector('.puzle2')
     const button2 = document.querySelector('.puz2')
@@ -111,7 +144,8 @@ const puzzle2 = document.querySelector('.puzle2')
         document.querySelector('.puzzle1').style.display = "none";
         document.querySelector('.puzzle2').style.display = "flex";
         document.querySelector('.puzzle3').style.display = "none";
-        document.querySelector('.noselect').style.display = "none";
+        document.querySelector('.puzzle4').style.display = "none";
+        document.querySelector('.selection').style.display = "none";
     });
 const puzzle3 = document.querySelector('.puzzle3')
     const button3 = document.querySelector('.puz3')
@@ -119,7 +153,17 @@ const puzzle3 = document.querySelector('.puzzle3')
         document.querySelector('.puzzle1').style.display = "none";
         document.querySelector('.puzzle2').style.display = "none";
         document.querySelector('.puzzle3').style.display = "flex";
-        document.querySelector('.noselect').style.display = "none";
+        document.querySelector('.puzzle4').style.display = "none";
+        document.querySelector('.selection').style.display = "none";
+    });
+const puzzle4 = document.querySelector('.puzle4')
+const button4 = document.querySelector('.puz4')
+    button4.addEventListener('click', function(){
+        document.querySelector('.puzzle1').style.display = "none";
+        document.querySelector('.puzzle2').style.display = "none";
+        document.querySelector('.puzzle3').style.display = "none";
+        document.querySelector('.puzzle4').style.display = "flex";
+        document.querySelector('.selection').style.display = "none";
     });
 
 

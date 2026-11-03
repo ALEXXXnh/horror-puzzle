@@ -6,6 +6,7 @@ body{
     cursor: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 .cursor{
     position: fixed;
     display: flex;
@@ -154,13 +155,21 @@ p{
     padding: 1%;
     text-align: left;
 }
+@keyframes fd{
+    0%{
+        filter: opacity(0%);
+    }
+    100%{
+        filter: opacity(100%);
+    }
+}
 .desc{
     position: absolute;
     width: 100%;
     height: auto;
-    top: 12%;
+    top: 17%;
     left: 0%;
-    
+    animation: fd 5s;
     z-index: 2;
 }
 .desc:hover{
